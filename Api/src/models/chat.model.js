@@ -7,13 +7,10 @@ const ChatSchema = Schema(
             type: String, require: true
         },
 
-        user_text : {
-            type: String, require: true
-        },
-        
-        bot_text : {
-            type: String, require: false
-        },
+        messages : [{
+            author : { type : String},
+            text : { type : String}
+        }],
 
         // User reference (Work like foreign key)
         owner : {
