@@ -31,7 +31,7 @@ function Featurs() {
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati similique quas ea deleniti 
                 voluptas commodi? Necessitatibus
             </p>
-        </motion.div>
+        </div>
       </div>
     </div>
   )
