@@ -1,13 +1,14 @@
-import './App.css';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+//import { GlobalContext } from './Context/GlobalContext';
+import AppRouter from './routes/AppRouter';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className='font-Montserrat'> Je suis H1</h1>
-      <h2>Je suis H2</h2>
-      <h3>Je suis H3</h3>
-      <p>Je suis P</p>
-    </div>
+      <BrowserRouter>
+          <AppRouter/>
+      </BrowserRouter>
+
   );
 }
 
