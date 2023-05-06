@@ -5,7 +5,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 function Description() {
   return (
     <div className='bg-[#09081a] h-screen w-full py-36'>
-      <div className="flex justify-between px-[8vw]">
+      <div className="flex justify-between px-[8vw] desc">
         <div className="w-[45%] space-y-16">
             <div className="flex flex-col space-y-2">
                 <h2 className='h2 text-white'> Lorem  Ipsum dolor Title  </h2>

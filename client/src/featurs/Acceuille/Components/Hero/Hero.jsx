@@ -6,11 +6,11 @@ import Blend from '../../../../assets/Blend.svg'
 
 function Hero() {
   return (
-    <div className=' relative hero h-screen  '>
+    <div className=' relative hero h-screen '>
       <NavBar/>
       <Title/>
       <Featurs/>
-      <img src={Blend} alt='blend' className='absolute bottom-[-26vh] right-0' />
+      <img src={Blend} alt='blend' className='blend absolute bottom-[-26vh] right-0' />
     </div>
   )
 }
