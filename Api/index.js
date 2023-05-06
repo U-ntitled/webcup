@@ -5,6 +5,8 @@ const mongoose = require('mongoose')
 const multer = require('multer')
 const cors= require('cors')
 const cookieParser = require('cookie-parser')
+const chatRoute = require('./src/routes/chat.route')
+const filterRoute = require('./src/routes/filter.route')
 
 dotenv.config()
 
@@ -18,12 +20,16 @@ main()
 .catch(err => console.log(err));
 
 
-//authorization
+//authorisation
 app.use(cors({
     origin:['http://localhost:3000'],
     credentials: true
 }))
 app.use(cookieParser())
+
+//Utilisation des routes de Chat
+app.use('/chat', chatRoute)
+app.use('/filter', filterRoute)
 
 app.listen(process.env.PORT,()=>{
     console.log("listenning on port:" + process.env.PORT)
