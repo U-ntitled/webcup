@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 function Title() {
   return (
     <div className=' flex justify-center items-center h-screen'>
-      <div className="w-[90%] flex justify-center items-center flex-col text-white space-y-5">
+      <div className="w-[90%] cont flex justify-center items-center flex-col text-white space-y-5">
         <motion.h1 
         initial={
             {
@@ -20,7 +20,7 @@ function Title() {
             duration: 1,
             delay:1
         }}
-        className='h1 font-extrabold'>
+        className='w-[100%] text-center h1 font-extrabold'>
             Unveiling the Secrets of Your Dreams 
         </motion.h1>
         <motion.div 
@@ -39,7 +39,7 @@ function Title() {
             delay:1
         }}
         className="text-center  font-Exo2 w-[60%]">
-            <p className='font-Exo2'>
+            <p className='font-Exo2 p-title'>
                 Vorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent
                 per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.

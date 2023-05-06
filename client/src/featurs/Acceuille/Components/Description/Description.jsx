@@ -6,7 +6,7 @@ import {motion,easeInOut} from 'framer-motion'
 function Description() {
   return (
     <div className='bg-[#09081a] h-screen w-full py-36'>
-      <div className="flex justify-between px-[8vw]">
+      <div className="flex justify-between px-[8vw] desc">
         <div className="w-[45%] space-y-16">
             <motion.div 
             initial={{x: -200 ,opacity:0}}
