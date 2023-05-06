@@ -48,23 +48,22 @@ exports.allChat = (req, res) =>  {
             .json({mess: err})
         }
     )
-
 }
 
 
 /* 
-    Create a chat for an authenticated user
+    Create a Message with user prompt
 */
-exports.createChat = async (req, res) => {
+exports.newMess = async (req, res) => {
 
     // Getting user ID and data from frontend
     const userId = req.cookies.user
-    const { theme, user_text } = req.body
+    const { user_text, idTheme } = req.body
     let reponse = ""
 
     user_text = user_text + "\n\n Context : analyse de reve \n Relation du reve avec l'avenir."
 
-    if(theme != '' && user_text != '')
+    if(idTheme != '' && user_text != '')
     {
 
         /**
@@ -87,15 +86,29 @@ exports.createChat = async (req, res) => {
 
 
         // Create a chat for 
-        const newChate = new chat({
-            theme: theme,
-            user_text: user_text,
-            bot_text: reponse,
-            owner: userId
-        })
+        let content1 = {
+            etat: 'user',
+            text: user_text
+        }
 
-        newChate.save()
-        
+        let content2 = {
+            etat: 'bot',
+            text: reponse,
+        }
+
+        chat.update(
+            {_id: idTheme},
+            {$push :{messages: content1}},
+            done
+        )
+
+        chat.update(
+            {_id: idTheme},
+            {$push :{messages: content2}},
+            done
+        )
+
+
         res
         .status(201)
         .json({
@@ -109,6 +122,29 @@ exports.createChat = async (req, res) => {
         .json({err: "Parametre introuvable"})
     }
     
+}
+
+
+/**
+ * COntroller which create a chat block
+ */
+exports.createChat = (req, res) => {
+    const userId = req.cookies.user
+    const theme = req.body.theme
+    if(userId == ''){
+        res
+        .status(403)
+        .json({err: 'Forbidden'})
+    }
+
+    const newTheme = new chat({
+        theme: theme
+    })
+
+    newTheme.save()
+
+    res.status(201)
+    .json({chat_id : newTheme._id})
 }
 
 /**
