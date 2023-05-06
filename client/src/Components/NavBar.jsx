@@ -18,7 +18,8 @@ function NavBar() {
             opacity:1,
         }}
         transition={{
-            duration: 1.5
+            duration: 1,
+            delay:0.2
         }}
         className="w-[45%] flex right-navbar ">
             <img src={Logo} alt='logo'/>
@@ -36,7 +37,8 @@ function NavBar() {
                 opacity:1,
             }}
             transition={{
-                duration: 1.5
+                duration: 1,
+                delay:0.6
             }}
         className="w-[30%] flex justify-between center-navbar  ">
             <h3 className='h3 text-white'> Home </h3>
@@ -56,7 +58,8 @@ function NavBar() {
             opacity:1,
         }}
         transition={{
-            duration: 1.5
+            duration: 1,
+            delay:0.6
         }}
         className="w-[25%] text-end left-navbar">
             <h3 className='h3 text-white'> Try it out </h3>
@@ -73,7 +76,8 @@ function NavBar() {
             opacity:1,
         }}
         transition={{
-            duration: 1.5
+            duration: 1,
+            delay:0.6
         }}
         className='text-white left-navbar2 hidden'>
             <MenuIcon/>

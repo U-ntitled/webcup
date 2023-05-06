@@ -17,7 +17,8 @@ function Title() {
             opacity:1,
         }}
         transition={{
-            duration: 1.5
+            duration: 1,
+            delay:1
         }}
         className='h1 font-extrabold'>
             Unveiling the Secrets of Your Dreams 
@@ -34,7 +35,8 @@ function Title() {
             opacity:1,
         }}
         transition={{
-            duration: 1.5
+            duration: 1,
+            delay:1
         }}
         className="text-center  font-Exo2 w-[60%]">
             <p className='font-Exo2'>
@@ -44,12 +46,42 @@ function Title() {
             </p>
         </motion.div>
         <div className=" flex justify-between w-[30%] pt-[12px] ">
-            <button className='bg-[#C525EA] btn'>
+            <motion.button
+            initial={
+                {
+                    x: -200,
+                    opacity:0,
+                }
+            }
+            animate={{
+                x: 0,
+                opacity:1,
+            }}
+            transition={{
+                duration: 1,
+                delay:1.5
+            }}
+            className='bg-[#C525EA] btn'>
                 TRY FOR  FREE
-            </button>
-            <button className='bg-[#fff] text-[#040404] btn'>
+            </motion.button>
+            <motion.button
+            initial={
+                {
+                    x: 200,
+                    opacity:0,
+                }
+            }
+            animate={{
+                x: 0,
+                opacity:1,
+            }}
+            transition={{
+                duration: 1,
+                delay:1.5
+            }}
+            className='bg-[#fff] text-[#040404] btn'>
                 DISCOVER
-            </button>
+            </motion.button>
         </div>
       </div>
     </div>
