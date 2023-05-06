@@ -32,7 +32,7 @@ exports.allChat = (req, res) =>  {
     }
 
     // Getting all chat from DB
-    chat.find({owner: userId}).then(
+    chat.find({owner: userId}).select("_id theme").then(
         (result) => {
 
             status_code = (result.length > 0) ? 200 : 404;
@@ -46,6 +46,30 @@ exports.allChat = (req, res) =>  {
             res
             .status(400)
             .json({mess: err})
+        }
+    )
+}
+
+/* 
+    Getting all message in specific chat
+*/
+
+exports.specific = (req, res) => {
+    const idChat = req.body.idChat 
+
+    chat.find({_id: idChat}).select("theme messages")
+    .then(
+        (result) => {
+            res
+            .status(200)
+            .json({message: "Get data success"})
+        }
+    )
+    .catch(
+        (error) => {
+            res
+            .status(401)
+            .json({error: error})
         }
     )
 }
@@ -191,7 +215,7 @@ exports.modify = (req, res) => {
  */
 exports.delete = (req, res) => {
     const userId = req.cookies.user
-    const idChat = req.body
+    const idChat = req.body.idChat
 
     if(userId == ''){
         res
