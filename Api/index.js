@@ -7,6 +7,7 @@ const cors= require('cors')
 const cookieParser = require('cookie-parser')
 const chatRoute = require('./src/routes/chat.route')
 const filterRoute = require('./src/routes/filter.route')
+const path = require('path')
 
 dotenv.config()
 
@@ -21,6 +22,12 @@ main()
 
 
 //authorisation
+git status
+//app.use(express.static(path.join(__dirname,'front')));
+app.get('/',(req, res)=>{
+    res.sendFile(path.join(__dirname,'front',"index.html"))
+})
+
 app.use(cors({
     origin:['http://localhost:3000'],
     credentials: true
@@ -28,12 +35,17 @@ app.use(cors({
 app.use(cookieParser())
 
 //Utilisation des routes de Chat
-app.use('/chat', chatRoute)
-app.use('/filter', filterRoute)
+app.use('/api/chat', chatRoute)
+app.use('/api/filter', filterRoute)
 
-app.listen(process.env.PORT,()=>{
-    console.log("listenning on port:" + process.env.PORT)
+app.get('/api',(req, res) => {
+    res.end('hello webcup')
 })
+app.get('/api/test',(req, res) => {
+    res.end('hello test')
+})
+app.listen()
+
 
 async function main(){
     await mongoose.connect(process.env.MONGO_URL)
