@@ -31,6 +31,9 @@
         @apply text-[#C525EA] font-semibold
     }
 }
+.send{
+    background: linear-gradient(135deg, rgba(15, 84, 232, 0.226) 0%, rgba(157, 223, 243, 0.151) 100%);
+}
 .h1{
     font-family: 'Exo2';
 }
