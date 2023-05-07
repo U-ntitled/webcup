@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 
 function Title() {
   return (
-    <div className=' flex justify-center items-center h-screen'>
+    <div className=' flex justify-center items-center h-screen tit'>
       <div className="w-[90%] cont flex justify-center items-center flex-col text-white space-y-5">
         <motion.h1 
         initial={

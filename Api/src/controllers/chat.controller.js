@@ -241,7 +241,11 @@ exports.chatgpt = async (request, response) => {
             model: "gpt-3.5-turbo",
             messages:[{role : 'user' , content: prompt}],
         });
-        console.log(completion.data.choices[0].message.content);
+        message = completion.data.choices[0].message.content
+        console.log(message);
+
+        response.status(200)
+        .json({text : message})
 
     } catch (error) {
         if (error.response) {
