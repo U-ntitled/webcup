@@ -2,6 +2,7 @@ const route = require('express').Router()
 const chatController = require('../controllers/chat.controller.js')
 
 route.get('/all', chatController.allChat)
+route.get('/specific', chatController.specific)
         
 route.put('/change', chatController.modify)
 route.delete('/delete', chatController.delete)
