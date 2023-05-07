@@ -23,7 +23,7 @@ function NavBar() {
             duration: 1,
             delay:0.2
         }}
-        className="w-[45%] flex right-navbar ">
+        className="w-[45%] flex right-navbar items-center ">
             <img src={Logo} alt='logo'/>
             <h3 className='h3 text-white'> Logo</h3>
         </motion.div>
