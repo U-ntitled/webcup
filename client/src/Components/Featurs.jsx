@@ -3,8 +3,8 @@ import {motion} from 'framer-motion'
 
 function Featurs() {
   return (
-    <div className='absolute flex  bottom-[-10vh] left-[20%]'>
-      <div className=" flex justify-between w-[60vw]">
+    <div className='absolute feat-card flex  bottom-[-10vh] left-[20%]'>
+      <div className=" flex justify-between feat-flex w-[60vw]">
         <motion.div 
         initial={
             {

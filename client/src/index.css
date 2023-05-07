@@ -357,11 +357,19 @@
 }
 
 @media screen and (max-width: 900px) {
+    .hero{
+        height: 50vh ;
+        padding-top: 0;  
+        padding-bottom: 0;  
+    }
     .adv-btn{
         font-size: .5rem;
         font-weight: 600;
     }
-
+    .cont-p-h2, .desc-cont-p{
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
     .adv-title{
         font-size: .4rem;
     }
@@ -388,7 +396,7 @@
         font-size: .6rem;
     }
     .desc-btn{
-        height: 5vh;
+        height: 3vh;
         width: 15vw;
         font-size: .6em;
         font-weight: 600;
@@ -423,7 +431,7 @@
         font-size: .8em;
     }
     .featur{
-        height: 13vh;
+        height: 15vh;
     }
     .adv-card{
         height: 10vh;
@@ -438,7 +446,7 @@
         width: 10rem;
         height: 3rem;
     }
-    .adv-txt{
+    .adv-txt, .desc-p{
         font-size: .4rem;
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -446,7 +454,7 @@
         overflow: hidden;
     }
     .p-feat{
-        font-size: .3rem;
+        font-size: .4rem;
         padding-left: .2rem;
         padding-right: .2rem;
     }
@@ -463,11 +471,14 @@
 @media screen and (max-width: 580px) {
     .h1{
         font-size: 1rem;
-        margin-top: -20rem;
+        margin-top: 1rem;
     }
-
+    .cont{
+        margin-top: 1rem;
+        margin-bottom: 20rem;
+    }
     .p-title{
-        font-size: .3rem;
+        font-size: .4rem;
     }
     .btn{
         margin-top: 0;
