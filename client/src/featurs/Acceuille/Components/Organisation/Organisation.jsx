@@ -12,13 +12,15 @@ function Organisation() {
         </AwesomeSlider>
     )
   return (
-    <div className='bg-[#09081A] flex justify-between items-center p-10 h-screen '>
-        <div className="flex flex-col w-[50%] space-y-7 ">
-            <div className="">
-                <h3 className='h3 text-white'>ABOUT THE ORGANISATION</h3>
-            </div>
-            <div className='h3 text-[#C525EA]'>
-                <h3>WHO IS INTERNATIONAL INSTITUTE  OF DREAMS?</h3>
+    <div className='bg-[#09081A] flex justify-between items-start pt-16 p-14 h-screen '>
+        <div className="flex flex-col org-cont w-[50%] space-y-8 ">
+            <div className="space-y-5">
+                <div className="">
+                    <h3 className='h3 org-title text-white'>ABOUT THE ORGANISATION</h3>
+                </div>
+                <div className='h3 org-title text-[#C525EA]'>
+                    <h3>WHO IS INTERNATIONAL INSTITUTE  OF DREAMS?</h3>
+                </div>
             </div>
             <div className="text-white font-Exo2 flex flex-col space-y-3">
                 <p>Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
@@ -28,8 +30,9 @@ function Organisation() {
                 odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
                 </p>
             </div>
-            <div className="font-Exo2 font-normal">
-                <button className='flex justify-center x items-center h-[6vh] w-[16vw] font-Exo2 bg-white  font-bold'>More about us</button>
+            
+            <div className="font-Exo2 font-normal pt-14">
+                <button className='flex justify-center rounded-sm org-btn text-[1.6rem] items-center h-[6vh] w-[16vw] font-Exo2 bg-white  font-bold'>More about us</button>
             </div>
         </div>
         <div className="h-[75vh] w-[30vw] rounded-lg ">
