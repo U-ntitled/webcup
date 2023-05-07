@@ -1,21 +1,29 @@
 import React from 'react'
+import Diversity1Icon from '@mui/icons-material/Diversity1';
+import DatasetIcon from '@mui/icons-material/Dataset';
+import AccessibilityNewIcon from '@mui/icons-material/AccessibilityNew';
+import NightsStayIcon from '@mui/icons-material/NightsStay';
 
 function Advantage() {
     const table = [{
-        title :'Title1',
-        describe: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.Possimus quo dolores quas, quis, ad commodi quos repudiandae consectetur quibusdam vitae accusamus nesciunt!'
+        title :'Friendly',
+        describe: 'Onirix is a friendly AI. It offers you a better experience while telling it your dreams',
+        icon:<Diversity1Icon sx={{fontSize:"70px", color:"#DDD"}}/>
     },
     {
-        title :'Title2',
-        describe: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.Possimus quo dolores quas, quis, ad commodi quos repudiandae consectetur quibusdam vitae accusamus nesciunt!'
+        title :'Powerful Dataset',
+        describe: 'Onirix has a very strong Dataset so that it will be well-trained and will have a lot of performance',
+        icon:<DatasetIcon sx={{fontSize:"70px", color:"#DDD"}}/>
     },
     {
-        title :'Title3',
-        describe: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.Possimus quo dolores quas, quis, ad commodi quos repudiandae consectetur quibusdam vitae accusamus nesciunt!'
+        title :'Available to everyone',
+        describe: 'Onirix has a free and premium edition. Both are satisfying. The premium edition is available at a great price and is very promising',
+        icon:<AccessibilityNewIcon sx={{fontSize:"70px", color:"#DDD"}}/>
     },
     {
-        title :'Titl4',
-        describe: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.Possimus quo dolores quas, quis, ad commodi quos repudiandae consectetur quibusdam vitae accusamus nesciunt!'
+        title :'Dreamscape',
+        describe: 'Onirix will guide you while traveling across the dreamland ',
+        icon:<NightsStayIcon sx={{fontSize:"70px", color:"#DDD"}}/>
     }
 
 ]
@@ -25,10 +33,10 @@ function Advantage() {
             <div className="grid grid-cols-2 gap-y-8 gap-x-5 w-[45%] ">
                 {
                     table.map((elem,key)=>(
-                    <div key={key} className="bg-[#251B3C] flex flex-col justify-center items-center p-6 text-center rounded-lg">
-                        <div className=" bg-[#D9D9D9] h-20 w-36  "/>
-                        <h3 className='h3 text-[#16F2F2] font-semibold'>{elem.title}</h3>
-                        <p className='text-white font-Exo2 text-sm'>
+                    <div key={key} className="bg-[#251B3C] flex flex-col justify-center items-center w-[70%] p-6 text-center rounded-lg">
+                        {elem.icon}
+                        <h3 className='h3 text-[#16F2F2] font-Exo2 font-semibold adv-title'>{elem.title}</h3>
+                        <p className='adv text-white font-Exo2 text-sm pb-4'>
                             {elem.describe}
                         </p>
                     </div>

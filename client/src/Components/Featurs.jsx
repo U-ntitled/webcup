@@ -22,11 +22,11 @@ function Featurs() {
         }}
         className="featur border-[#C525EA]  border-b-[1px] shadow-md shadow-[#C525EA]">
             <h3 className='featur-title font-Exo2'>
-                FEATURE ONE
+                UNRAVEL
             </h3>
             <p className='text-white  p-feat text-center font-Exo2'>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati similique quas ea deleniti 
-                voluptas commodi? Necessitatibus
+                Wanna Uncover the deepest secret of your dream?
+                Explore the Dreamland with the help of our AI assistant.
             </p>
         </motion.div>
         <motion.div 
@@ -43,13 +43,13 @@ function Featurs() {
         transition={{
             duration: 1,
             delay:1.5
-        }}className="featur  border-[#16F2F2] border-b-[1px]">
+        }}className="featur  border-[#16F2F2] border-b-[1px] shadow-md shadow-[#16F2F2]">
             <h3 className='featur-title font-Exo2'>
-                FEATURE ONE
+                PREDICT
             </h3>
             <p className='text-white p-feat text-center font-Exo2'>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati similique quas ea deleniti 
-                voluptas commodi? Necessitatibus
+                What your dreams are telling you about your future? 
+                Well, Onirix will make a prediction for you basing on your dream.
             </p>
         </motion.div>
         <motion.div 
@@ -67,13 +67,13 @@ function Featurs() {
             duration: 1,
             delay:1.5
         }}
-        className="featur border-[#C525EA] border-b-[1px]">
+        className="featur border-[#C525EA] border-b-[1px] shadow-md shadow-[#C525EA]">
             <h3 className='featur-title font-Exo2'>
-                FEATURE ONE
+                ADVISE
             </h3>
             <p className='text-white p-feat text-center font-Exo2 '>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati similique quas ea deleniti 
-                voluptas commodi? Necessitatibus
+                Any advices concerning your dream and your future?
+                We also offer you this possibility so that you can have a better future
             </p>
         </motion.div>
       </div>

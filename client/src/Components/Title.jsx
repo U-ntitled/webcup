@@ -40,9 +40,9 @@ function Title() {
         }}
         className="text-center  font-Exo2 w-[60%]">
             <p className='font-Exo2 p-title'>
-                Vorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent
-                per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
+                What if dreams were more than just illusions of the mind? What if they were able to predict the future?
+                An amazing discovery mady be researchers from the International Institute of Dreams, a renowned organisation specializing in dream studies.
+                "Onirix"
             </p>
         </motion.div>
         <div className=" flex justify-between w-[30%] pt-[12px] ">

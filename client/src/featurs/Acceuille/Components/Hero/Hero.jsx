@@ -6,7 +6,7 @@ import Blend from '../../../../assets/Blend.svg'
 
 function Hero() {
   return (
-    <div className=' relative hero h-screen '>
+    <div className=' relative hero h-screen'>
       <NavBar/>
       <Title/>
       <Featurs/>

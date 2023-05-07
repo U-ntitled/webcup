@@ -18,10 +18,6 @@
 
 }
 @layer  components{
-    
-    .h2{
-        @apply font-Exo2 text-[2rem] 
-    }
     .h3{
         @apply font-Exo2 text-[24px] text-red-500
     }
@@ -39,12 +35,50 @@
     font-family: 'Exo2';
 }
 @media screen and (max-width: 2522px) {
+    .adv{
+        font-size: 1.1rem;
+        width: 88%;
+    }
+    .adv-title{
+        font-size: 1.4rem;
+        margin-bottom: .5rem;
+    }
+    .trans-title{
+        font-size: 4rem;
+    }
+    .trans-p{
+        font-size: 2rem;
+    }
     .blend{
         bottom: -20vh;
     }
     .desc{
         margin-top: 5rem;
     }
+    .desc-ch>:not([hidden]){
+        margin-bottom: 4.5rem;
+        margin-top: 0rem;
+    }
+    .desc-img{
+        width: 64vh;
+    }
+    .desc-h2{
+        font-size: 3.4rem;
+    }
+    .desc-cont-p{
+        margin-top: 0;
+    }
+    .desc-p{
+        font-size: 1.4rem;
+    }
+    .desc-btn{
+        height: 6vh;
+        width: 16vw;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    
     .featur{
         display: flex;
         flex-direction: column;
@@ -56,7 +90,7 @@
         margin-bottom: 0.9rem;
     }
     .p-feat{
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding-left: .6rem;
         padding-right: .6rem;
     }
@@ -67,7 +101,7 @@
         height: 5vh;
         width: 11.5vw;
         font-family: Exo2;
-        font-weight: bold;
+        font-weight: 700;
 
     }
     .h1{
@@ -93,12 +127,198 @@
         width: 20%;
     }
 }
+@media screen and (max-width: 1682px) {
+    .trans-title{
+        font-size: 3rem;
+    }
+    .trans-p{
+        font-size: 1.5rem;
+    }
+    .desc-cont-p{
+        margin-top: 0;
+    }
+    .desc-p{
+        font-size: 1.2rem;
+    }
+    .desc-h2{
+        font-size: 2rem;
+    }
+
+    .desc-btn{
+        height: 5vh;
+        width: 15vw;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .desc-ch>:not([hidden]){
+        margin-bottom: 4rem;
+        margin-top: 0rem;
+    }
+}
+@media screen and (max-width: 1482px) {
+    .trans-title{
+        font-size: 2.5rem;
+    }
+    .trans-p{
+        font-size: 1.2rem;
+    }
+    .desc-cont-p{
+        margin-top: 0;
+    }
+    .desc-p{
+        font-size: 1rem;
+    }
+    .desc-h2{
+        font-size: 2rem;
+    }
+
+    .desc-btn{
+        height: 5vh;
+        width: 15vw;
+        font-size: .9rem;
+        font-weight: 600;
+    }
+    .desc-ch>:not([hidden]){
+        margin-bottom: 2rem;
+        margin-top: 0rem;
+    }
+}
 @media screen and (max-width: 1382px) {
+    .trans-title{
+        font-size: 2.5rem;
+    }
+    .trans-p{
+        font-size: 1.2rem;
+    }
     .blend{
         bottom: -26vh;
     }
+    .featur{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .featur-title{
+        font-size: 1.2rem;
+        margin-bottom: 0.9rem;
+    }
+    .p-feat{
+        font-size: .7rem;
+        padding-left: .6rem;
+        padding-right: .6rem;
+    }
+    .desc{
+        padding-bottom: 5rem;
+        padding-top: 0rem;
+    }
+    .desc-ch>:not([hidden]){
+        margin-bottom: 2rem;
+        margin-top: 0rem;
+    }
+    .desc-img{
+        width: 60vh;
+    }
+    .desc-h2{
+        font-size: 1.4rem;
+    }
+    .desc-cont-p{
+        margin-top: 0;
+    }
+    .desc-p{
+        font-size: .8rem;
+    }
+    .desc-btn{
+        height: 5vh;
+        width: 15vw;
+        font-size: .9em;
+        font-weight: 600;
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        font-size: .8rem;
+        width: 12vw;
+        margin-bottom: 2rem;
+        font-family: Exo2;
+        font-weight: 700;
+
+    }
+    .p-title{
+        font-size: .7rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    .cont{
+        margin-bottom: 3.5rem;
+    }
+    
     .h1{
         font-size: 2.4rem;
+        margin-top: 2em;
+        margin-bottom: 2rem;
+        font-weight: bold;
+    }
+    .right-navbar{
+        width: 20%;
+    }
+    .center-navbar{
+        width: 50%;
+    }
+    .left-navbar{
+        width: 20%;
+    }
+    .right-navbar>h3, .center-navbar>h3, .left-navbar>h3{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .trans-title{
+        font-size: 1.8rem;
+    }
+    .trans-p{
+        font-size: .8rem;
+    }
+    .blend{
+        display: none;
+    }
+    .main-desc{
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+    .h1{
+        margin-bottom: 1rem;
+    }
+    .desc-ch>:not([hidden]){
+        margin-bottom: 2rem;
+        margin-top: 0rem;
+    }
+    .desc-img{
+        width: 60vh;
+    }
+    .desc-h2{
+        font-size: 1.4rem;
+    }
+    .desc-cont-p{
+        margin-top: 0;
+    }
+    .desc-p{
+        font-size: .8rem;
+    }
+    .desc-btn{
+        height: 5vh;
+        width: 15vw;
+        font-size: .9em;
+        font-weight: 600;
+    }
+    .featur-title{
+        font-size: 1rem;
+
+    }
+    .p-feat{
+        font-size: .5rem;
     }
     .right-navbar{
         width: 20%;
@@ -110,7 +330,36 @@
         width: 20%;
     }
 }
+
 @media screen and (max-width: 900px) {
+    .trans-title{
+        font-size: 1.6rem;
+    }
+    .trans-p{
+        font-size: .6rem;
+    }
+    .desc-ch>:not([hidden]){
+        margin-bottom: 1.5rem;
+        margin-top: 0rem;
+    }
+    .desc-img{
+        width: 55vh;
+    }
+    .desc-h2{
+        font-size: 1.2rem;
+    }
+    .desc-cont-p{
+        margin-top: 0;
+    }
+    .desc-p{
+        font-size: .6rem;
+    }
+    .desc-btn{
+        height: 5vh;
+        width: 15vw;
+        font-size: .6em;
+        font-weight: 600;
+    }
     .h1{
         font-size: 2rem;
 
