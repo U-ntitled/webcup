@@ -1,5 +1,5 @@
 import React from 'react'
-import { Advantage, Description, Hero, Transition } from '../featurs/Acceuille'
+import { Advantage, Description, Footer, Hero, Organisation, Registration, Transition } from '../featurs/Acceuille'
 
 function Index() {
   return (
@@ -8,8 +8,11 @@ function Index() {
       <Description/>
       <Transition/>
       <Advantage/>
-    </div>
-  )
+      <Registration/>
+      <Organisation/>
+      <Footer/>
+      </div>
+    )
 }
 
 export default Index

@@ -4,13 +4,14 @@ import { Route, Routes } from "react-router-dom";
 //import AuthLayout from "../Layout/AuthLayout";
 //import UsersLayout from "../Layout/UsersLayout";
 import Index from "../Pages";
+import AuthPage from "../Pages/AuthPage";
 
 
 function AppRouter(){
   return (
     <Routes>
         <Route path="/" element={<Index/>} />
-        <Route path="auth/*" element={<h1>Home Page</h1>}/>
+        <Route path="auth/*" element={<AuthPage/>}/>
         <Route path="users/*" element={<h1>Home Page</h1>}/>
     </Routes>
   )

@@ -14,16 +14,10 @@
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    box-shadow: inset 100vw 100vh linear-gradient(rgba(5, 2, 89, 0.1) 39%,#1e1e1e 39%);
+    box-shadow: inset 100vw 100vh rgba(5, 2, 89, 0.2)
 
 }
 @layer  components{
-    .h1{
-        @apply font-Exo2 text-[3rem]
-    }
-    .h2{
-        @apply font-Exo2 text-[2rem] 
-    }
     .h3{
         @apply font-Exo2 text-[24px] text-red-500
     }
@@ -37,7 +31,425 @@
         @apply text-[#C525EA] font-semibold
     }
 }
-@media screen and (max-width: 1022px) {
+.h1{
+    font-family: 'Exo2';
+}
+@media screen and (max-width: 2522px) {
+    .adv{
+        font-size: 1.1rem;
+        width: 88%;
+    }
+    .adv-title{
+        font-size: 1.4rem;
+        margin-bottom: .5rem;
+    }
+    .trans-title{
+        font-size: 4rem;
+    }
+    .trans-p{
+        font-size: 2rem;
+    }
+    .blend{
+        bottom: -20vh;
+    }
+    .desc{
+        margin-top: 5rem;
+    }
+    .desc-ch>:not([hidden]){
+        margin-bottom: 4.5rem;
+        margin-top: 0rem;
+    }
+    .desc-img{
+        width: 64vh;
+    }
+    .desc-h2{
+        font-size: 3.4rem;
+    }
+    .desc-cont-p{
+        margin-top: 0;
+    }
+    .desc-p{
+        font-size: 1.4rem;
+    }
+    .desc-btn{
+        height: 6vh;
+        width: 16vw;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    
+    .featur{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .featur-title{
+        font-size: 1.6rem;
+        margin-bottom: 0.9rem;
+    }
+    .p-feat{
+        font-size: 1rem;
+        padding-left: .6rem;
+        padding-right: .6rem;
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        width: 11.5vw;
+        font-family: Exo2;
+        font-weight: 700;
+
+    }
+    .h1{
+        font-size: 3.8rem;
+        margin-bottom: 3rem;
+        font-weight: bold;
+    }
+    .p-title{
+        font-size: 1.07rem;
+        font-weight: bold;
+        margin-bottom: 3rem;
+    }
+    .cont{
+        margin-bottom: 3rem;
+    }
+    .right-navbar{
+        width: 20%;
+    }
+    .center-navbar{
+        width: 40%;
+    }
+    .left-navbar{
+        width: 20%;
+    }
+}
+@media screen and (max-width: 1682px) {
+    .adv-title{
+        font-size: 1.1rem;
+    }
+    .adv{
+        font-size: .8rem;
+    }
+    .trans-title{
+        font-size: 3rem;
+    }
+    .trans-p{
+        font-size: 1.5rem;
+    }
+    .desc-cont-p{
+        margin-top: 0;
+    }
+    .desc-p{
+        font-size: 1.2rem;
+    }
+    .desc-h2{
+        font-size: 2rem;
+    }
+
+    .desc-btn{
+        height: 5vh;
+        width: 15vw;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .desc-ch>:not([hidden]){
+        margin-bottom: 4rem;
+        margin-top: 0rem;
+    }
+}
+@media screen and (max-width: 1482px) {
+    .adv-title{
+        font-size: .9rem;
+    }
+    .adv{
+        font-size: .67rem;
+    }
+    .trans-title{
+        font-size: 2.5rem;
+    }
+    .trans-p{
+        font-size: 1.2rem;
+    }
+    .desc-cont-p{
+        margin-top: 0;
+    }
+    .desc-p{
+        font-size: 1rem;
+    }
+    .desc-h2{
+        font-size: 2rem;
+    }
+
+    .desc-btn{
+        height: 5vh;
+        width: 15vw;
+        font-size: .9rem;
+        font-weight: 600;
+    }
+    .desc-ch>:not([hidden]){
+        margin-bottom: 2rem;
+        margin-top: 0rem;
+    }
+}
+@media screen and (max-width: 1382px) {
+    .adv{
+        display: none;
+    }
+    .trans-title{
+        font-size: 2.5rem;
+    }
+    .trans-p{
+        font-size: 1.2rem;
+    }
+    .blend{
+        bottom: -26vh;
+    }
+    .featur{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .featur-title{
+        font-size: 1.2rem;
+        margin-bottom: 0.9rem;
+    }
+    .p-feat{
+        font-size: .7rem;
+        padding-left: .6rem;
+        padding-right: .6rem;
+    }
+    .desc{
+        padding-bottom: 5rem;
+        padding-top: 0rem;
+    }
+    .desc-ch>:not([hidden]){
+        margin-bottom: 2rem;
+        margin-top: 0rem;
+    }
+    .desc-img{
+        width: 60vh;
+    }
+    .desc-h2{
+        font-size: 1.4rem;
+    }
+    .desc-cont-p{
+        margin-top: 0;
+    }
+    .desc-p{
+        font-size: .8rem;
+    }
+    .desc-btn{
+        height: 5vh;
+        width: 15vw;
+        font-size: .9em;
+        font-weight: 600;
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        font-size: .8rem;
+        width: 12vw;
+        margin-bottom: 2rem;
+        font-family: Exo2;
+        font-weight: 700;
+
+    }
+    .p-title{
+        font-size: .7rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    .cont{
+        margin-bottom: 3.5rem;
+    }
+    
+    .h1{
+        font-size: 2.4rem;
+        margin-top: 2em;
+        margin-bottom: 2rem;
+        font-weight: bold;
+    }
+    .right-navbar{
+        width: 20%;
+    }
+    .center-navbar{
+        width: 50%;
+    }
+    .left-navbar{
+        width: 20%;
+    }
+    .right-navbar>h3, .center-navbar>h3, .left-navbar>h3{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .adv-title{
+        font-size: .6rem;
+    }
+    .adv-btn{
+        font-size: .9rem;
+        font-weight: 700;
+    }
+    .trans-title{
+        font-size: 1.8rem;
+    }
+    .trans-p{
+        font-size: .8rem;
+    }
+    .blend{
+        display: none;
+    }
+    .main-desc{
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+    .h1{
+        margin-bottom: 1rem;
+    }
+    .desc-ch>:not([hidden]){
+        margin-bottom: 2rem;
+        margin-top: 0rem;
+    }
+    .desc-img{
+        width: 60vh;
+    }
+    .desc-h2{
+        font-size: 1.4rem;
+    }
+    .desc-cont-p{
+        margin-top: 0;
+    }
+    .desc-p{
+        font-size: .8rem;
+    }
+    .desc-btn{
+        height: 5vh;
+        width: 15vw;
+        font-size: .9em;
+        font-weight: 600;
+    }
+    .featur-title{
+        font-size: 1rem;
+
+    }
+    .p-feat{
+        font-size: .5rem;
+    }
+    .right-navbar{
+        width: 20%;
+    }
+    .center-navbar{
+        width: 50%;
+    }
+    .left-navbar{
+        width: 20%;
+    }
+    .btn{
+        font-size: .6rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .adv-btn{
+        font-size: .5rem;
+        font-weight: 600;
+    }
+
+    .adv-title{
+        font-size: .4rem;
+    }
+    .trans-title{
+        font-size: 1.6rem;
+    }
+    .trans-p{
+        font-size: .6rem;
+    }
+    .desc-ch>:not([hidden]){
+        margin-bottom: 1.5rem;
+        margin-top: 0rem;
+    }
+    .desc-img{
+        width: 55vh;
+    }
+    .desc-h2{
+        font-size: 1.2rem;
+    }
+    .desc-cont-p{
+        margin-top: 0;
+    }
+    .desc-p{
+        font-size: .6rem;
+    }
+    .desc-btn{
+        height: 5vh;
+        width: 15vw;
+        font-size: .6em;
+        font-weight: 600;
+    }
+    .h1{
+        font-size: 2rem;
+
+    }
+    .foot{
+        display: none;
+    }
+    .featur{
+        padding-bottom: 2rem;
+    }
+    .featur-title{
+        margin-bottom: 0;
+        padding-top: .3rem;
+        font-size: .8rem;
+    }
+    .right-navbar{
+        width: 20%;
+    }
+    .center-navbar{
+        width: 50%;
+    }
+    .left-navbar{
+        width: 20%;
+    }
+}
+@media screen and (max-width: 680px) {
+    .h1{
+        font-size: .8em;
+    }
+    .featur{
+        height: 13vh;
+    }
+    .adv-card{
+        height: 10vh;
+    }
+    .adv-btn{
+        height: 3vh;
+    }
+    .adv-h2{
+        font-size: .8rem;
+    }
+    .icons{
+        width: 10rem;
+        height: 3rem;
+    }
+    .adv-txt{
+        font-size: .4rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp:4;
+        overflow: hidden;
+    }
+    .p-feat{
+        font-size: .3rem;
+        padding-left: .2rem;
+        padding-right: .2rem;
+    }
     .right-navbar{
         width: 20%;
     }
@@ -49,6 +461,22 @@
     }
 }
 @media screen and (max-width: 580px) {
+    .h1{
+        font-size: 1rem;
+        margin-top: -20rem;
+    }
+
+    .p-title{
+        font-size: .3rem;
+    }
+    .btn{
+        margin-top: 0;
+        font-size: .37rem;
+        height: 2.5vh;
+    }
+    .featur-title{
+        display: none;
+    }
     .center-navbar{
         display: none;
     }
