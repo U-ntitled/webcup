@@ -3,10 +3,10 @@ const {Schema} = mongoose
 
 const UserSchema = Schema(
     {
-        first_name : {
+        fname : {
             type: String, require: true
         },
-        last_name : {
+        lname : {
             type: String, require: true
         },
         email: {

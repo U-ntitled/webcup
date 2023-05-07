@@ -2,8 +2,10 @@ import React from 'react'
 import Logo from '../assets/logo.svg'
 import {motion} from 'framer-motion'
 import MenuIcon from '@mui/icons-material/Menu';
+import { useNavigate } from 'react-router-dom';
 
 function NavBar() {
+  const navigate = useNavigate() 
   return (
     <div className=" fixed flex justify-between items-center h-[13vh] w-full px-10 z-10">
         <motion.div 
@@ -62,7 +64,7 @@ function NavBar() {
             delay:0.6
         }}
         className="w-[25%] text-end left-navbar">
-            <h3 className='h3 text-white'> Try it out </h3>
+            <h3  onClick={()=>{navigate('/auth/signup')}} className='h3 text-white cursor-pointer'> Try it out </h3>
         </motion.div>
         <motion.div 
         initial={

@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import Logo from '../../assets/logo.svg'
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import axios from 'axios';
+import AuthContext from '../../context/GlobalContext';
 
 const Login = () => {
-    // const {getConnection} = useContext(AuthContext)
-    // const [visibility,setVisibility] = useState(false)
+  const {getConnection} = useContext(AuthContext)
     const [errorpassword,setErrorPassword] = useState(false)
     const [erroremail,setErrorEmail] = useState(false)
     const navigate = useNavigate()
@@ -24,8 +24,8 @@ const Login = () => {
       if(information.password && information.email){
         const login = await axios.post('http://localhost:8000/auth/login',information)
         if(login.status === 200){
-           //getConnection()
-           navigate('/users/') 
+           getConnection()
+           navigate('/conversation') 
         }
      }
      }

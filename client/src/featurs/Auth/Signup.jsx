@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import Logo from '../../assets/logo.svg'
 import axios from 'axios';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import AuthContext from '../../context/GlobalContext';
 
 function Signup() {
+    const {getConnection} = useContext(AuthContext)
     const navigate = useNavigate()
     const HandleChange = (e)=>{
         const name = e.target.name
@@ -29,18 +31,20 @@ function Signup() {
         if(!information.email){
           setError(err=>({...err,email:true}))
         }
+        console.log(information)
         if(information.lname && information.email   && information.confirmpassword 
           && information.password && information.fname){
           const userinformation = {
             lname: information.lname,
             fname: information.fname,
             password: information.password,
-            email: information.email
+            email: information.email,
+            confirm: information.confirmpassword
            }
            console.log(userinformation)
            const register = await axios.post('http://localhost:8000/auth/register',userinformation)
            if(register.status === 200){
-            //getConnection()
+            getConnection()
              navigate('/auth/confirmation')
            }
         }
@@ -79,8 +83,8 @@ function Signup() {
                                          </div>
                                 )                  
                             }
-                            <input onChange={HandleChange} type='text' name='fname' 
-                            id='fname' className='border border-none w-[100%]  md:w-[60%] 
+                            <input onChange={HandleChange} type='text' name='lname' 
+                            id='lname' className='border border-none w-[100%]  md:w-[60%] 
                               text-sm text-[#7B7777] bg-[#F2F2F2] pl-4 md:pl-2
                               h-[6vh] rounded-full focus:outline-none bg-none' 
                               placeholder='Your last name...'
@@ -140,8 +144,8 @@ function Signup() {
                             </div>
                             )                  
                         }
-                        <input onChange={HandleChange} type='password' name='confirm' 
-                        id='xonfirm' className='border border-none w-[100%]  md:w-[50%] 
+                        <input onChange={HandleChange} type='password' name='confirmpassword' 
+                        id='confirmpassword' className='border border-none w-[100%]  md:w-[50%] 
                         text-sm text-[#7B7777] bg-[#F2F2F2] pl-4
                           h-[6vh] rounded-full focus:outline-none bg-none' 
                           placeholder='Confirme your password...'

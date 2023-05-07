@@ -1,7 +1,9 @@
 import React from 'react'
 import {motion} from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 
 function Title() {
+    const navigate = useNavigate()
   return (
     <div className=' flex justify-center items-center h-screen tit'>
       <div className="w-[90%] cont flex justify-center items-center flex-col text-white space-y-5">
@@ -46,7 +48,7 @@ function Title() {
             </p>
         </motion.div>
         <div className=" flex justify-between w-[30%] pt-[12px] ">
-            <motion.button
+            <motion.button onClick={navigate('auth/login')}
             initial={
                 {
                     x: -200,
@@ -64,7 +66,7 @@ function Title() {
             className='bg-[#C525EA] btn rounded-sm'>
                 TRY FOR  FREE
             </motion.button>
-            <motion.button
+            <motion.button onClick={navigate('auth/signup')}
             initial={
                 {
                     x: 200,

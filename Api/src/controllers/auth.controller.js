@@ -13,8 +13,8 @@ dotenv.config()
 exports.register = async(req,res)=>{
     try{
         console.log(req.body)
-        const {email,password,lname,fname,birth,gender} = req.body
-        if(!email || !password || !lname || !fname || !birth || !gender){
+        const {email,password,lname,fname} = req.body
+        if(!email || !password || !lname || !fname){
             return res
             .status(400)
             .json({message:"Please enter the required information"})
@@ -32,8 +32,6 @@ exports.register = async(req,res)=>{
             lastname: lname,
             password: passwordHash,
             email: email,
-            birthday: birth,
-            gender: gender
         })
         const user = await newUser.save()
         const token = jwt.sign({
@@ -72,8 +70,6 @@ exports.register = async(req,res)=>{
             code: codeverification
         })   
         const test = await newLogevent.save()
-        console.log(test)
-        req.session.user = 'test'
         res
         .cookie("user",token,{
             expires: new Date(Date.now() +  2592000000),
