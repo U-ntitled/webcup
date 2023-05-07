@@ -39,7 +39,7 @@ function Description() {
             viewport={{once: true}}
             className="pl-5">
                 <button className='flex desc-btn justify-center items-center h-[6vh] w-[16vw] font-Exo2 bg-[#C525EA] text-white font-bold'>
-                    TRY IT FO FREE <ArrowForwardIcon sx={{marginLeft:'3px', fontSize:'16px'}}/>
+                    VISIT <ArrowForwardIcon sx={{marginLeft:'5px', fontSize:'20px', fontWeight:"bold"}}/>
                 </button>
             </motion.div>
         </div>

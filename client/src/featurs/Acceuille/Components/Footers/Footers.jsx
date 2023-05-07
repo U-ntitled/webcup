@@ -44,11 +44,11 @@ const Footer = () => {
     });
   return (
      <>  
-        <Stack direction='row' bgcolor='#251B3C' className='font-Exo2' height='40vh' justifyContent='space-around' alignItems='center'>
+        <Stack direction='row' bgcolor='#251B3C' className='font-Exo2 foot' height='40vh' justifyContent='space-around' alignItems='center'>
           
           <Box display='flex' flexDirection='column'gap={2}> 
                <Typography variant='h5' className='text-white'>
-                     USEFULl LINKS
+                     USEFUL LINKS
                 </Typography>
                <Link href='/about'underline='none' sx={{color:'#fff'}}>
                      <Typography variant='subtitle2'>About us</Typography>
@@ -71,12 +71,12 @@ const Footer = () => {
                      </Typography>
                      <CssTextField className='text-white'
                          fullWidth 
-                         label="Enter your emaila address " 
+                         label="Enter your email address " 
                         //  id="fullWidth" 
                     />
                      <StyledButton 
                          variant='outlined'
-                         sx={{color:'#C525EA', border:'1px solid #C525EA'}}
+                         sx={{color:'#C525EA', marginTop:"2rem", border:'1px solid #C525EA'}}
                     > 
                        Subscribe Now
                     </StyledButton>

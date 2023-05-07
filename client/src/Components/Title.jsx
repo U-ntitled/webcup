@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 
 function Title() {
   return (
-    <div className=' flex justify-center items-center h-screen'>
+    <div className=' flex justify-center items-center h-screen tit'>
       <div className="w-[90%] cont flex justify-center items-center flex-col text-white space-y-5">
         <motion.h1 
         initial={
@@ -61,7 +61,7 @@ function Title() {
                 duration: 1,
                 delay:1.5
             }}
-            className='bg-[#C525EA] btn'>
+            className='bg-[#C525EA] btn rounded-sm'>
                 TRY FOR  FREE
             </motion.button>
             <motion.button
@@ -79,7 +79,7 @@ function Title() {
                 duration: 1,
                 delay:1.5
             }}
-            className='bg-[#fff] text-[#040404] btn'>
+            className='bg-[#fff] text-[#040404] btn rounded-sm'>
                 DISCOVER
             </motion.button>
         </div>
