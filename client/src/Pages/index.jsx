@@ -1,5 +1,5 @@
 import React from 'react'
-import { Advantage, Description, Footer, Hero, Registration, Transition } from '../featurs/Acceuille'
+import { Advantage, Description, Footer, Hero, Organisation, Registration, Transition } from '../featurs/Acceuille'
 
 function Index() {
   return (
