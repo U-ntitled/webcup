@@ -61,7 +61,7 @@ function Title() {
                 duration: 1,
                 delay:1.5
             }}
-            className='bg-[#C525EA] btn'>
+            className='bg-[#C525EA] btn rounded-sm'>
                 TRY FOR  FREE
             </motion.button>
             <motion.button
@@ -79,7 +79,7 @@ function Title() {
                 duration: 1,
                 delay:1.5
             }}
-            className='bg-[#fff] text-[#040404] btn'>
+            className='bg-[#fff] text-[#040404] btn rounded-sm'>
                 DISCOVER
             </motion.button>
         </div>
