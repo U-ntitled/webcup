@@ -52,7 +52,9 @@ function Conversation() {
              </nav>
 
         </aside>
-        <section className='w-[76%]'>
+
+        {/* ________MAIN CHAT________ */}
+        <section className='w-[76%] RIGHT_SECTION'>
 
             {/* ------ICON HEADER------ */}
               <div className=' flex mt-2 m-20 mb-10 mr-10 justify-end p-5'>
@@ -65,40 +67,42 @@ function Conversation() {
 
             {/* SECTION MESSAGE */}
               <div>
-                 <div>
-
+                
+                <div>
+                  
                     {/* ------SECTION CHAT------ */}
-                    <div>
-                        <div>
+                  <div className='right_chat_body'>
+                    <div className='chat_block_a'>
+                        <div className='photo_profile'>
                           A
                         </div>
-                        <p>
+                        <p className='message_boxA'>
                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolor ab expedita assumenda natus est doloremque dicta sed cum sequi necessitatibus, consequuntur perspiciatis nisi architecto distinctio laudantium reprehenderit rerum eligendi.
                        </p>
                     </div>
 
-                    <div>
-                        <div>
-                           O
+                    <div className='chat_block_b'>
+                        <div className='photo_profile'>
+                           B
                         </div>
-                        <p>
+                        <p className='message_boxB'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. A repellendus odio corporis ullam error, quo sit dolore illum rem, ipsum dolores quaerat nesciunt eius libero, fugiat magni vero quae ratione.
                         </p>
                     </div>
-
-
                   </div>
-
+                </div>
+                
                 {/* BOTTOM INPUT FORM BAR */}
-                  <div>
+                  <div className='right_chat_input'>
                       <form>
                            <input type='textarea' />
-                           <span>
+                           <span className='right_chat_send_button'>
                                 Send
                            </span>
                            <img src='' alt='icon de microphone'/>
                       </form>
                   </div>
+                  
               </div>
         </section>
     </main>
