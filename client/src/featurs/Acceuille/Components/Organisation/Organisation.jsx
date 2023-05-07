@@ -2,9 +2,6 @@ import React from 'react'
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
  
-
-
-
 function Organisation() {
     const slide = (
         <AwesomeSlider className='w-full h-[screen]' >
