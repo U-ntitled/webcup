@@ -20,7 +20,7 @@ function Featurs() {
             duration: 1,
             delay:1.5
         }}
-        className="featur border-[#C525EA]  border-b-[1px] shadow-md shadow-[#C525EA]">
+        className="featur border-[#C525EA]  border-b-[1px] shadow-sm shadow-[#C525EA]">
             <h3 className='featur-title font-Exo2'>
                 UNRAVEL
             </h3>
@@ -43,7 +43,7 @@ function Featurs() {
         transition={{
             duration: 1,
             delay:1.5
-        }}className="featur  border-[#16F2F2] border-b-[1px] shadow-md shadow-[#16F2F2]">
+        }}className="featur  border-[#16F2F2] border-b-[1px] shadow-sm shadow-[#16F2F2]">
             <h3 className='featur-title font-Exo2'>
                 PREDICT
             </h3>
@@ -67,7 +67,7 @@ function Featurs() {
             duration: 1,
             delay:1.5
         }}
-        className="featur border-[#C525EA] border-b-[1px] shadow-md shadow-[#C525EA]">
+        className="featur border-[#C525EA] border-b-[1px] shadow-sm shadow-[#C525EA]">
             <h3 className='featur-title font-Exo2'>
                 ADVISE
             </h3>

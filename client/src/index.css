@@ -128,6 +128,12 @@
     }
 }
 @media screen and (max-width: 1682px) {
+    .adv-title{
+        font-size: 1.1rem;
+    }
+    .adv{
+        font-size: .8rem;
+    }
     .trans-title{
         font-size: 3rem;
     }
@@ -156,6 +162,12 @@
     }
 }
 @media screen and (max-width: 1482px) {
+    .adv-title{
+        font-size: .9rem;
+    }
+    .adv{
+        font-size: .67rem;
+    }
     .trans-title{
         font-size: 2.5rem;
     }
@@ -184,6 +196,9 @@
     }
 }
 @media screen and (max-width: 1382px) {
+    .adv{
+        display: none;
+    }
     .trans-title{
         font-size: 2.5rem;
     }
@@ -275,6 +290,13 @@
     }
 }
 @media screen and (max-width: 1200px) {
+    .adv-title{
+        font-size: .6rem;
+    }
+    .adv-btn{
+        font-size: .9rem;
+        font-weight: 700;
+    }
     .trans-title{
         font-size: 1.8rem;
     }
@@ -329,9 +351,20 @@
     .left-navbar{
         width: 20%;
     }
+    .btn{
+        font-size: .6rem;
+    }
 }
 
 @media screen and (max-width: 900px) {
+    .adv-btn{
+        font-size: .5rem;
+        font-weight: 600;
+    }
+
+    .adv-title{
+        font-size: .4rem;
+    }
     .trans-title{
         font-size: 1.6rem;
     }
@@ -364,6 +397,17 @@
         font-size: 2rem;
 
     }
+    .foot{
+        display: none;
+    }
+    .featur{
+        padding-bottom: 2rem;
+    }
+    .featur-title{
+        margin-bottom: 0;
+        padding-top: .3rem;
+        font-size: .8rem;
+    }
     .right-navbar{
         width: 20%;
     }
@@ -376,7 +420,35 @@
 }
 @media screen and (max-width: 680px) {
     .h1{
-        font-size: 1.6rem;
+        font-size: .8em;
+    }
+    .featur{
+        height: 13vh;
+    }
+    .adv-card{
+        height: 10vh;
+    }
+    .adv-btn{
+        height: 3vh;
+    }
+    .adv-h2{
+        font-size: .8rem;
+    }
+    .icons{
+        width: 10rem;
+        height: 3rem;
+    }
+    .adv-txt{
+        font-size: .4rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp:4;
+        overflow: hidden;
+    }
+    .p-feat{
+        font-size: .3rem;
+        padding-left: .2rem;
+        padding-right: .2rem;
     }
     .right-navbar{
         width: 20%;
@@ -390,7 +462,20 @@
 }
 @media screen and (max-width: 580px) {
     .h1{
-        font-size: 1.2rem;
+        font-size: 1rem;
+        margin-top: -20rem;
+    }
+
+    .p-title{
+        font-size: .3rem;
+    }
+    .btn{
+        margin-top: 0;
+        font-size: .37rem;
+        height: 2.5vh;
+    }
+    .featur-title{
+        display: none;
     }
     .center-navbar{
         display: none;
