@@ -1,13 +1,22 @@
 import React from 'react'
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
+<<<<<<< HEAD
  
+=======
+import slide1 from './../../../../assets/slide1.jpg'
+import slide2 from './../../../../assets/slide2.png'
+import slide3 from './../../../../assets/slide3.jpeg'
+
+
+
+>>>>>>> 5db434e (Adding data to slides)
 function Organisation() {
     const slide = (
-        <AwesomeSlider className='w-full h-[screen]' >
-            <div className='bg-[rgb(214,162,18)] h-full w-[30vw] text-[#040404] rounded-lg'>1</div>
-            <div className='bg-[#efefef] h-full w-[30vw] text-[#040404] rounded-lg'>2</div>
-            <div className='bg-red-500 h-full w-[30vw] text-[#040404] rounded-lg'>3</div>
+        <AwesomeSlider className='w-[60%] h-[67vh]' >
+            <div className='h-full w-[50vw] text-[#040404] rounded-lg '><img src={slide1} className='min-w-full min-h-full' alt="" /></div>
+            <div className='h-full w-[50vw] text-[#040404] rounded-lg '><img src={slide2} className='min-w-full min-h-full' alt="" /></div>
+            <div className='h-full w-[50vw] text-[#040404] rounded-lg '><img src={slide3} className='min-w-full min-h-full' alt="" /></div>
         </AwesomeSlider>
     )
   return (
@@ -19,10 +28,21 @@ function Organisation() {
             <div className='h3 text-[#C525EA]'>
                 <h3>WHO IS INTERNATIONAL INSTITUTE  OF DREAMS?</h3>
             </div>
+<<<<<<< HEAD
 
             <div className="text-white font-Exo2 flex flex-col space-y-3">
                 <p>Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
                     Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+=======
+            <div className="text-white font-Exo2">
+                <p>The International Institute of dreams is a multidisciplinary organization dedicated 
+                to the pure and applied investigation of dreams, dreaming and nightmares.
+                </p>
+                <p>
+                    We've developped Onirix to help people to know what their dreams tell them about them and their future, 
+                    love story and many useful informations.
+                </p>
+>>>>>>> 5db434e (Adding data to slides)
             </div>
 
                 <div className="text-white font-Exo2">
